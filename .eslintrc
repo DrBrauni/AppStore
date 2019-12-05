@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "plugins": [
+    "@bem-react"
+  ],
+  "rules": {
+    "@bem-react/whitelist-levels-imports": [
+      "error",
+      {
+        "defaultLevel": "common",
+        "whiteList": {
+          "common": [
+            "common"
+          ],
+          "desktop": [
+            "common",
+            "desktop"
+          ],
+          "mobile": [
+            "common",
+            "mobile"
+          ]
+        }
+      }
+    ]
+  }
+}
